@@ -1,0 +1,36 @@
+@import "taro-ui-vue3/dist/style/components/countdown.scss";
+
+.at-countdown {
+  margin-top: 30px;
+  margin-left: 30px;
+  height: 80px;
+  font-family: "MiSans";
+  &__item {
+    font-size: 50px;
+  }
+
+  &__time-box {
+    min-width: 70px;
+    font: {
+      size: 50px;
+      style: normal;
+      weight: 400;
+      variant: normal;
+      line-height: 66px;
+      text-align: center;
+    }
+    color: black;
+  }
+  &__separator {
+    display: inline-flex;
+    padding: 0 $spacing-v-xs;
+    font-size: 40px;
+    text-align: justify;
+    align-items: center;
+  }
+  &--card {
+    .at-countdown__time-box {
+      color: #ff7210;
+    }
+  }
+}
